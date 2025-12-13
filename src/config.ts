@@ -49,7 +49,7 @@ export const siteConfig: SiteConfig = {
 		// 顶栏标题文本
 		text: "Glassblog",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
-		icon: "assets/home/home.webp",
+		icon: "/assets/home/home.webp",
 	},
 
 	 bangumi: {
@@ -90,10 +90,10 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"assets/desktop-banner/1.webp",
+				"/assets/desktop-banner/1.webp",
 			], // 桌面横幅图片
 			mobile: [
-				"assets/mobile-banner/1.webp",
+				"/assets/mobile-banner/1.webp",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -193,10 +193,10 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"assets/desktop-banner/1.webp",
+			"/assets/desktop-banner/1.webp",
 		], // 桌面横幅图片
 		mobile: [
-			"assets/mobile-banner/1.webp",
+			"/assets/mobile-banner/1.webp",
 		], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
