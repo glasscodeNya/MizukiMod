@@ -52,8 +52,11 @@ export const siteConfig: SiteConfig = {
 		icon: "assets/home/home.webp",
 	},
 
+	 bangumi: {
+    userId: "1188481", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
+  },
 	anime: {
-		mode: "local", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置
+		mode: "bangumi", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置
 	},
 
 	// 文章列表布局配置
@@ -87,10 +90,10 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/1.webp",
+				"assets/desktop-banner/1.webp",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/1.webp",
+				"assets/mobile-banner/1.webp",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -190,10 +193,10 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.webp",
+			"assets/desktop-banner/1.webp",
 		], // 桌面横幅图片
 		mobile: [
-			"/assets/mobile-banner/1.webp",
+			"assets/mobile-banner/1.webp",
 		], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
