@@ -49,7 +49,7 @@ export const siteConfig: SiteConfig = {
 		// 顶栏标题文本
 		text: "Glassblog",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
-		icon: "assets/home/home.png",
+		icon: "assets/home/home.jpg",
 	},
 
 	anime: {
@@ -87,7 +87,7 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/1.png",
+				"/assets/desktop-banner/1.jpg",
 			], // 桌面横幅图片
 			mobile: [
 				"/assets/mobile-banner/1.jpg",
@@ -118,7 +118,7 @@ export const siteConfig: SiteConfig = {
 		// 请自行搭建API
 
 		homeText: {
-			enable: true, // 在主页显示自定义文本
+			enable: false, // 在主页显示自定义文本
 			title: "美しいミズキ", // 主页横幅主标题
 
 			subtitle: [
@@ -190,7 +190,7 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.png",
+			"/assets/desktop-banner/1.jpg",
 		], // 桌面横幅图片
 		mobile: [
 			"/assets/mobile-banner/1.jpg",
