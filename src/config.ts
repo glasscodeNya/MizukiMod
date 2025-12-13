@@ -14,15 +14,12 @@ import type {
 	SiteConfig,
 } from "./types/config";
 import { LinkPreset } from "./types/config";
-
-// 移除i18n导入以避免循环依赖
-
 // 定义站点语言
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
 	title: "GlassBlog",
-	subtitle: "One blog website",
+	subtitle: "One blog Website",
 	siteURL: "https://glasscode.top/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-07-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 
@@ -50,7 +47,7 @@ export const siteConfig: SiteConfig = {
 	// 顶栏标题配置
 	navbarTitle: {
 		// 顶栏标题文本
-		text: "GlassCode",
+		text: "Glassblog",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
 		icon: "assets/home/home.png",
 	},
@@ -171,11 +168,11 @@ export const siteConfig: SiteConfig = {
 	generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
 	favicon: [
 		// 留空以使用默认 favicon
-		// {
-		//   src: '/favicon/icon.png',    // 图标文件路径
+		{
+		  src: '/favicon/icon.png',    // 图标文件路径
 		//   theme: 'light',              // 可选，指定主题 'light' | 'dark'
 		//   sizes: '32x32',              // 可选，图标大小
-		// }
+		 }
 	],
 
 	// 字体配置
@@ -308,7 +305,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	avatar: "assets/images/avatar.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "GlassCode",
 	bio: "ACG & Tech",
 	typewriter: {
