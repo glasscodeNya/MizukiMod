@@ -38,7 +38,7 @@ export const siteConfig: SiteConfig = {
 		diary: true, // 日记页面开关
 		friends: false, // 友链页面开关
 		projects: false, // 项目页面开关
-		skills: true, // 技能页面开关
+		skills: false, // 技能页面开关
 		timeline: true, // 时间线页面开关
 		albums: true, // 相册页面开关
 		devices: false, // 设备页面开关
@@ -77,13 +77,13 @@ export const siteConfig: SiteConfig = {
 	// 壁纸模式配置
 	wallpaperMode: {
 		// 默认壁纸模式：banner=顶部横幅，fullscreen=全屏壁纸，none=无壁纸
-		defaultMode: "fullscreen",
+		defaultMode: "banner",
 		// 整体布局方案切换按钮显示设置（默认："desktop"）
 		// "off" = 不显示
 		// "mobile" = 仅在移动端显示
 		// "desktop" = 仅在桌面端显示
 		// "both" = 在所有设备上显示
-		showModeSwitchOnMobile: "off",
+		showModeSwitchOnMobile: "both",
 	},
 
 	banner: {
@@ -106,7 +106,7 @@ export const siteConfig: SiteConfig = {
 		},
 
 		waves: {
-			enable: true, // 是否启用水波纹效果(这个功能比较吃性能)
+			enable: false, // 是否启用水波纹效果(这个功能比较吃性能)
 			performanceMode: false, // 性能模式：减少动画复杂度(性能提升40%)
 			mobileDisable: false, // 移动端禁用
 		},
@@ -121,18 +121,13 @@ export const siteConfig: SiteConfig = {
 		// 请自行搭建API
 
 		homeText: {
-			enable: false, // 在主页显示自定义文本
-			title: "美しいミズキ", // 主页横幅主标题
+			enable: true, // 在主页显示自定义文本
+			title:"Glassblog", // 主页横幅主标题
 
 			subtitle: [
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
-				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				"今日はなんでもない日。でも、ちょっとだけいい日",
 			],
 			typewriter: {
-				enable: true, // 启用副标题打字机效果
+				enable: false, // 启用副标题打字机效果
 
 				speed: 100, // 打字速度（毫秒）
 				deleteSpeed: 50, // 删除速度（毫秒）
@@ -163,8 +158,8 @@ export const siteConfig: SiteConfig = {
 		// 留空以使用默认 favicon
 		{
 		  src: '/favicon/icon.png',    // 图标文件路径
-		//   theme: 'light',              // 可选，指定主题 'light' | 'dark'
-		//   sizes: '32x32',              // 可选，图标大小
+		  theme: 'light',              // 可选，指定主题 'light' | 'dark'
+		  sizes: '32x32',              // 可选，图标大小
 		 }
 	],
 
@@ -201,7 +196,7 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
 	carousel: {
-		enable: true, // 启用轮播
+		enable: false, // 启用轮播
 		interval: 5, // 轮播间隔时间（秒）
 	},
 	zIndex: -1, // 层级，确保壁纸在背景层
@@ -272,11 +267,6 @@ export const navBarConfig: NavBarConfig = {
 			url: "#",
 			icon: "material-symbols:more-horiz",
 			children: [
-				{
-					name: "Skills",
-					url: "/skills/",
-					icon: "material-symbols:psychology",
-				},
 				{
 					name: "Timeline",
 					url: "/timeline/",
