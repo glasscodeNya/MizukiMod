@@ -91,7 +91,7 @@ export const siteConfig: SiteConfig = {
 	// 壁纸模式配置
 	wallpaperMode: {
 		// 默认壁纸模式：banner=顶部横幅，fullscreen=全屏壁纸，none=无壁纸
-		defaultMode: "fullscreen",
+		defaultMode: "banner",
 		// 整体布局方案切换按钮显示设置（默认："desktop"）
 		// "off" = 不显示
 		// "mobile" = 仅在移动端显示
@@ -218,50 +218,30 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
-		LinkPreset.Archive,
 		// 支持自定义导航栏链接，支持多级菜单
 		{
-			name: "Links",
-			url: "/links/",
-			icon: "material-symbols:link",
-			children: [
-				{
-					name: "GitHub",
-					url: "https://github.com/glasscodeNya/MizukiMod",
-					external: true,
-					icon: "fa7-brands:github",
-				},
-				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
-					external: true,
-					icon: "fa7-brands:bilibili",
-				},
-			],
+			name: "GitHub",
+			url: "https://github.com/glasscodeNya/MizukiMod",
+			external: true,
+			icon: "fa7-brands:github",
 		},
 		{
-			name: "My",
-			url: "/content/",
-			icon: "material-symbols:person",
-			children: [
-				{
-					name: "Anime",
-					url: "/anime/",
-					icon: "material-symbols:movie",
-				},
-			],
+			name: "Bilibili",
+			url: "https://space.bilibili.com/701864046",
+			external: true,
+			icon: "fa7-brands:bilibili",
 		},
+
+		{
+			name: "Anime",
+			url: "/anime/",
+			icon: "material-symbols:movie",
+		},
+
 		{
 			name: "About",
-			url: "/content/",
-			icon: "material-symbols:info",
-			children: [
-				{
-					name: "About",
-					url: "/about/",
-					icon: "material-symbols:person",
-				},
-			],
+			url: "/about/",
+			icon: "material-symbols:person",
 		},
 	],
 };
@@ -281,24 +261,9 @@ export const profileConfig: ProfileConfig = {
 			url: "https://space.bilibili.com/701864046",
 		},
 		{
-			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
-		},
-		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
 			url: "https://github.com/matsuzaka-yuki",
-		},
-		{
-			name: "Codeberg",
-			icon: "simple-icons:codeberg",
-			url: "https://codeberg.org",
-		},
-		{
-			name: "Discord",
-			icon: "fa7-brands:discord",
-			url: "https://discord.gg/MqW6TcQtVM",
 		},
 	],
 };
@@ -391,7 +356,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	mode: "local", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
 		"https://meting.mysqil.com/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
-	id: "14164869977", // 歌单ID
+	id: "10017270914", // 歌单ID
 	server: "netease", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
 	type: "playlist", // 播单类型
 };
