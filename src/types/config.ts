@@ -60,13 +60,6 @@ export interface SiteConfig {
 	// 特色页面开关配置
 	featurePages: {
 		anime: boolean; // 番剧页面开关
-		diary: boolean; // 日记页面开关
-		friends: boolean; // 友链页面开关
-		projects: boolean; // 项目页面开关
-		skills: boolean; // 技能页面开关
-		timeline: boolean; // 时间线页面开关
-		albums: boolean; // 相册页面开关
-		devices: boolean; // 设备页面开关
 	};
 
 	// 文章列表布局配置
@@ -206,13 +199,7 @@ export enum LinkPreset {
 	Home = 0,
 	Archive = 1,
 	About = 2,
-	Friends = 3,
-	Anime = 4,
-	Diary = 5,
-	Albums = 6,
-	Projects = 7,
-	Skills = 8,
-	Timeline = 9,
+	Anime = 3,
 }
 
 export interface NavBarLink {
