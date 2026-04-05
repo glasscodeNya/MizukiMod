@@ -7,7 +7,6 @@ import { widgetConfigs } from "../config";
 import { initLinkPreloading } from "../utils/navigation-utils";
 import { SWUP_SELECTORS } from "./core/swup-config";
 import { SwupHooksManager } from "./core/swup-hooks";
-import { setupSakuraOnDOMReady } from "./effects/sakura-effect";
 import {
 	destroyTransitionEffect,
 	getTransitionEffect,
@@ -64,9 +63,6 @@ export class SwupManager {
 
 		await this.initPanelHandler();
 
-		// 设置 Sakura 特效
-		this.setupSakura();
-
 		// 初始化 Swup 钩子
 		this.initSwupHooks();
 
@@ -92,13 +88,6 @@ export class SwupManager {
 		} catch (error) {
 			console.error("SwupManager: 面板处理器初始化失败", error);
 		}
-	}
-
-	/**
-	 * 设置 Sakura 特效
-	 */
-	private setupSakura(): void {
-		setupSakuraOnDOMReady(widgetConfigs);
 	}
 
 	/**
