@@ -247,7 +247,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	avatar: "assets/images/123.png", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "GlassCode", // 显示在侧边栏个人资料组件中的名字
 	bio: "Tech and ACG?",
 	typewriter: {
@@ -339,7 +339,7 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "ブログへようこそ！これはサンプルの告知です", // 公告内容
+	content: "ブログへようこそ！", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
