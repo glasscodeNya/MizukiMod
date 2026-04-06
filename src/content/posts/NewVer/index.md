@@ -2,16 +2,17 @@
 title: 论Rust
 published: 2026-04-06
 pinned: flase
-description:only只是一个测试罢了.
-tags: [开发]
+description: only是一个测试
+tags:
+  - 开发
 category: 开发
-licenseName: "MIT"
+licenseName: MIT
 author: GlassCode
 draft: false
 date: 2026
-image: "./cover.jpg"
+image: ./cover.jpg
 pubDate: 2026-04-06
-permalink: "Push-NewVer"
+permalink: Push-NewVer
 ---
 :::warning
 背后有AI发力，谨慎观看，仅仅作为网站测试 :::
