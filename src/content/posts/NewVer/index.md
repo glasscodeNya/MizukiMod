@@ -1,7 +1,7 @@
 ---
 title: 论Rust
 published: 2026-04-06
-pinned: flase
+pinned: false
 description: only是一个测试
 tags:
   - 开发
